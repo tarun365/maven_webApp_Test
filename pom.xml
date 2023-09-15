@@ -3,6 +3,23 @@
   <groupId>Maven_webApp_test</groupId>
   <artifactId>Maven_webapp_test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+  <build>
+	  
+	  <plugins>
+		  <plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-surefire-plugin</artifactId>
+			  <version>3.0.0-M5</version>
+			  
+			  <configuration>
+				  <suiteXmlFiles>
+					  <suiteXmlFile>resources/testng.xml</suiteXmlFile>
+				  </suiteXmlFiles>
+			  </configuration>
+		  </plugin>
+	  </plugins>
+  </build>
   
   <dependencies>
 	  
