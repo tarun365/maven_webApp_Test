@@ -14,7 +14,7 @@ public class login_page {
 	public void Login() {
 		
 		driver.get("http://localhost:8083/webapp/");
-		driver.findElement(By.xpath("//input[@name='unme']")).sendKeys("tarun");
+		driver.findElement(By.xpath("//input[@name='uname']")).sendKeys("tarun");
 		driver.findElement(By.xpath("//input[@name='psw']")).sendKeys("tarun");
 		
 	}
