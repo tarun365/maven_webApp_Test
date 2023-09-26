@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class register_user {
 	
-WebDriver driver;
+	WebDriver driver;
 	
 	public register_user(WebDriver driver) {
 		this.driver=driver;
