@@ -15,6 +15,9 @@ public class test {
 	
 	WebDriver driver;
 	login_page lp;
+	register_user ru;
+	theme_change tc;
+	update_profile up;
 	
 	@BeforeTest
 	public void setup() {
