@@ -1,4 +1,4 @@
-package Webapp_test_scenarios;
+package Webapp_teamcity;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
