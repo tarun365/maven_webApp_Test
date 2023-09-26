@@ -23,11 +23,34 @@ public class test {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 	}
-	@Test(priority=0)
-	public void login_page() {
+	@Test(description = "Critical Functionality: User Login",priority=0)
+	public void login_page() throws InterruptedException {
 		lp=new login_page(driver);
 		lp.Login();
 	}
+	
+	@Test(description = "Critical Functionality: User Registrartion",priority=1)
+	public void register_user() {
+		ru=new register_user(driver);
+		ru.Register();
+		
+	}
+	
+	@Test(description = "Non-Critical Functionality: Changing Theme",priority=2)
+	public void theme_change() {
+		tc=new theme_change(driver);
+		tc.Theme();
+		
+	}
+	
+	@Test(description = "Non-Critical Functionality: Profile update",priority=3)
+	public void update_profile() {
+		up=new update_profile(driver);
+		up.ProfileUpdate();
+		
+	}
+	
+	
 	
 	@AfterTest
 	public void closeBrowser() {
