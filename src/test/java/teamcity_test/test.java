@@ -39,14 +39,14 @@ public class test {
 		
 	}
 	
-	@Test(description = "Non-Critical Functionality: Changing Theme",priority=2)
+	@Test(description = "Non-Cr Functionality: Changing Theme",priority=2)
 	public void theme_change() {
 		tc=new theme_change(driver);
 		tc.Theme();
 		
 	}
 	
-	@Test(description = "Non-Critical Functionality: Profile update",priority=3)
+	@Test(description = "Non-Cr Functionality: Profile update",priority=3)
 	public void update_profile() {
 		up=new update_profile(driver);
 		up.ProfileUpdate();
