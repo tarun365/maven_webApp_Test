@@ -1,4 +1,4 @@
-package com.sauceDemo.testNGListener;
+package testNGListener;
 
 import java.io.File;
 import java.util.Calendar;
